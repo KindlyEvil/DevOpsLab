@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Building..'
+                sh 'labExam.py'
             }
         }
         stage('Test') { 
@@ -14,6 +15,7 @@ pipeline {
         stage('Deploy') { 
             steps {
                 echo 'Deploy'
+                
             }
         }
     }
